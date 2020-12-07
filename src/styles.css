@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  background-color: lightblue;
+}
+h1 {
+  color: blue;
+  font-size: 44px;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-input {
+  padding: 5px 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: darkblue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: darkblue;
+}
+.btn-primary:hover {
+  box-shadow: 1px 4px 6px darkmagenta, 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px darkmagenta;
+}
+
+.load-more {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gallery {
+  list-style: none;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallery-item {
+  margin: 15px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  transition: all 500ms ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+.img-container {
+  height: 287px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.stats {
+  display: flex;
+}
+.stats-item {
+  margin-left: 30px;
+  vertical-align: top;
+}
