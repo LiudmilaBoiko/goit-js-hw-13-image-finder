@@ -17,7 +17,7 @@ function onSearch(event) {
     
     imageApiService.query = event.currentTarget.elements.query.value;
 
-    if (ImageAPIservise.query === '') {
+    if (imageApiService.query === ``) {
         return alert('Введите название изображения');
     };
 
